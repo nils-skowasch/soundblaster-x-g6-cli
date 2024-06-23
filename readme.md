@@ -2,8 +2,7 @@
 
 This project makes use of the [hidapi](https://github.com/trezor/cython-hidapi) library and thus transitively from
 [libusb](https://github.com/libusb/libusb) to provide a CLI to control
-the [SoundBlaster X G6](https://de.creative.com/p/sound-blaster/sound-blasterx-g6) device from command line,
-and thus, empowers the people to control the device from Linux.
+the [SoundBlaster X G6](https://de.creative.com/p/sound-blaster/sound-blasterx-g6) device from command line. This empowers the people to control the G6 in Linux.
 
 ## Important Disclaimer
 
@@ -91,8 +90,9 @@ libusb-1.0-0/jammy-updates,now 2:1.0.25-1ubuntu2 amd64 [installed]
 
 ### Windows: Add libusb-1.0.dll to %PATH%
 
-Download the package `libusb` from Pypi (see `requirements.txt`) and add the following DLL file to your `%PATH%` 
-variable: `./soundblaster-x-g6-cli/venv/lib/python3.12/site-packages/libusb/_platform/_windows/x64/libusb-1.0.dll`
+Download the package [libusb](https://pypi.org/project/libusb/#files) from Pypi (version `1.0.27`) and add the 
+following DLL file to your `%PATH%` variable:
+`/libusb-1.0.27/src/libusb/_platform/_windows/x64/libusb-1.0.dll`
 
 This is required to let the application use libusb in the backend.
 
